@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import ToDoList from "./ToDoList";
+import ToDoList from "./components/ToDoList";
 
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
@@ -51,11 +51,16 @@ table {
   box-sizing: border-box;
 }
 body {
+  display: flex;
+  justify-content: center;
   font-family: sans-serif;
 }
 a {
   text-decoration: none;
   color: inherit;
+}
+li {
+  list-style: none;
 }
 `;
 
